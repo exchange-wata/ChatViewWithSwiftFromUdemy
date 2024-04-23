@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39B2C7092BD7B119008B1EAA /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B2C7082BD7B119008B1EAA /* ChatView.swift */; };
 		39D94EDB2BD7AF18000D484E /* ChatViewWithSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D94EDA2BD7AF18000D484E /* ChatViewWithSwiftUIApp.swift */; };
-		39D94EDD2BD7AF18000D484E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D94EDC2BD7AF18000D484E /* ContentView.swift */; };
 		39D94EDF2BD7AF21000D484E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D94EDE2BD7AF21000D484E /* Assets.xcassets */; };
 		39D94EE22BD7AF21000D484E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D94EE12BD7AF21000D484E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39B2C7082BD7B119008B1EAA /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		39D94ED72BD7AF18000D484E /* ChatViewWithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatViewWithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D94EDA2BD7AF18000D484E /* ChatViewWithSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewWithSwiftUIApp.swift; sourceTree = "<group>"; };
-		39D94EDC2BD7AF18000D484E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		39D94EDE2BD7AF21000D484E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39D94EE12BD7AF21000D484E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				39D94EDA2BD7AF18000D484E /* ChatViewWithSwiftUIApp.swift */,
-				39D94EDC2BD7AF18000D484E /* ContentView.swift */,
+				39B2C7082BD7B119008B1EAA /* ChatView.swift */,
 				39D94EDE2BD7AF21000D484E /* Assets.xcassets */,
 				39D94EE02BD7AF21000D484E /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39D94EDD2BD7AF18000D484E /* ContentView.swift in Sources */,
+				39B2C7092BD7B119008B1EAA /* ChatView.swift in Sources */,
 				39D94EDB2BD7AF18000D484E /* ChatViewWithSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
