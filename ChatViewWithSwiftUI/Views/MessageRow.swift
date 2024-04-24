@@ -34,9 +34,10 @@ extension MessageRow {
     }
 
     private var userIcon: some View {
-        Image(systemName: "person.circle")
+        Image("animal_penguin_couple")
             .resizable()
             .frame(width: 48, height: 48)
+            .cornerRadius(30)
     }
     
     private var messageText: some View {
