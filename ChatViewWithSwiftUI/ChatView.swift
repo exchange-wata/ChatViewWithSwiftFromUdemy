@@ -11,59 +11,15 @@ struct ChatView: View {
     var body: some View {
         VStack(spacing: 0) {
             // Message Area
-            ScrollView {
-                VStack(spacing: 0) {
-                    ForEach(0..<15) {
-                        _ in
-                        HStack {
-                            Circle()
-                                .frame(width: 60, height: 60)
-                            Capsule()
-                                .frame(height: 60)
-                        }
-                        .padding(.bottom)
-                    }
-                }
-                .padding(.horizontal)
-                .padding(.top, 72)
-            }
-            .background(.teal)
-            .overlay(
-                // Navigation Area
-                HStack {
-                    Circle()
-                        .frame(width: 40, height: 40)
-                    Text("Title")
-                    Spacer()
-                    Circle()
-                        .frame(width: 40, height: 40)
-                    Circle()
-                        .frame(width: 40, height: 40)
-                    Circle()
-                        .frame(width: 40, height: 40)
-                }
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(.black.opacity(0.5))
-                
-                , alignment: .top
-            )
+            messageArea
+                .overlay(
+                    // Navigation Area
+                    navigationArea
+                    , alignment: .top
+                )
             
             // Input Area
-            HStack {
-                Circle()
-                    .frame(width: 40, height: 40)
-                Circle()
-                    .frame(width: 40, height: 40)
-                Circle()
-                    .frame(width: 40, height: 40)
-                Capsule()
-                    .frame(height: 40)
-                Circle()
-                    .frame(width: 40, height: 40)
-            }
-            .padding()
-            .background(.white)
+            inputArea
         }
     }
 }
@@ -71,5 +27,64 @@ struct ChatView: View {
 struct ChatView_Previews: PreviewProvider {
     static var previews: some View {
         ChatView()
+    }
+}
+
+extension ChatView {
+    private var messageArea: some View {
+        ScrollView {
+            VStack(spacing: 0) {
+                ForEach(0..<15) {
+                    _ in
+                    HStack {
+                        Circle()
+                            .frame(width: 60, height: 60)
+                        Capsule()
+                            .frame(height: 60)
+                    }
+                    .padding(.bottom)
+                }
+            }
+            .padding(.horizontal)
+            .padding(.top, 72)
+        }
+        .background(.teal)
+    }
+    
+    private var inputArea: some View {
+        HStack {
+            Circle()
+                .frame(width: 40, height: 40)
+            Circle()
+                .frame(width: 40, height: 40)
+            Circle()
+                .frame(width: 40, height: 40)
+            Capsule()
+                .frame(height: 40)
+            Circle()
+                .frame(width: 40, height: 40)
+        }
+        .padding()
+        .background(.white)
+        
+    }
+    
+    private var navigationArea: some View {
+        HStack {
+            Circle()
+                .frame(width: 40, height: 40)
+            Text("Title")
+            Spacer()
+            Circle()
+                .frame(width: 40, height: 40)
+            Circle()
+                .frame(width: 40, height: 40)
+            Circle()
+                .frame(width: 40, height: 40)
+        }
+        .foregroundColor(.white)
+        .padding()
+        .background(.black.opacity(0.5))
+        
     }
 }
