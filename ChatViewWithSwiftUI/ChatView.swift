@@ -28,6 +28,26 @@ struct ChatView: View {
                 .padding(.top, 72)
             }
             .background(.teal)
+            .overlay(
+                // Navigation Area
+                HStack {
+                    Circle()
+                        .frame(width: 40, height: 40)
+                    Text("Title")
+                    Spacer()
+                    Circle()
+                        .frame(width: 40, height: 40)
+                    Circle()
+                        .frame(width: 40, height: 40)
+                    Circle()
+                        .frame(width: 40, height: 40)
+                }
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(.black.opacity(0.5))
+                
+                , alignment: .top
+            )
             
             // Input Area
             HStack {
