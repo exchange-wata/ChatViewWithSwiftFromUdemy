@@ -31,8 +31,10 @@ struct MessageRow_Previews: PreviewProvider {
 extension MessageRow {
     private var formattedDateString: String {
         let formatter = DateFormatter()
-        formatter.timeStyle = .short
-        return formatter.string(from: Date())
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        guard let date = formatter.date(from: message.date) else { return "" }
+        formatter.dateFormat = "HH:mm"
+        return formatter.string(from: date)
     }
 
     private var userIcon: some View {
@@ -52,7 +54,7 @@ extension MessageRow {
     private var messageState: some View {
         VStack(alignment: .trailing) {
             Spacer()
-            Text(message.isRead ? "既読" : "未読")
+            Text(message.isRead ? "既読" : "")
             Text(formattedDateString)
         }
         .foregroundColor(.secondary)
