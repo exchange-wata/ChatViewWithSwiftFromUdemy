@@ -14,9 +14,9 @@
 		39D94EDF2BD7AF21000D484E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D94EDE2BD7AF21000D484E /* Assets.xcassets */; };
 		39D94EE22BD7AF21000D484E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D94EE12BD7AF21000D484E /* Preview Assets.xcassets */; };
 		39FB28DA2BDC756500DE1F03 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FB28D92BDC756500DE1F03 /* Message.swift */; };
-		39FB28E12BDDD0AC00DE1F03 /* DataModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FB28E02BDDD0AC00DE1F03 /* DataModelTest.swift */; };
 		39FB28E32BDDD35500DE1F03 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FB28E22BDDD35500DE1F03 /* Chat.swift */; };
 		39FB28E62BDDD45B00DE1F03 /* chatData.json in Resources */ = {isa = PBXBuildFile; fileRef = 39FB28E52BDDD45B00DE1F03 /* chatData.json */; };
+		39FB28E92BDDD60A00DE1F03 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FB28E82BDDD60A00DE1F03 /* ChatViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +28,9 @@
 		39D94EDE2BD7AF21000D484E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39D94EE12BD7AF21000D484E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		39FB28D92BDC756500DE1F03 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		39FB28E02BDDD0AC00DE1F03 /* DataModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelTest.swift; sourceTree = "<group>"; };
 		39FB28E22BDDD35500DE1F03 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		39FB28E52BDDD45B00DE1F03 /* chatData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chatData.json; sourceTree = "<group>"; };
+		39FB28E82BDDD60A00DE1F03 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +47,6 @@
 		396D56E72BD8BCF500337DA7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				39FB28DF2BDDD09B00DE1F03 /* TestView */,
 				39B2C7082BD7B119008B1EAA /* ChatView.swift */,
 				396D56E52BD8BCDA00337DA7 /* MessageRow.swift */,
 			);
@@ -87,6 +86,7 @@
 				39B799FA2BDC719D008979FD /* Models */,
 				396D56E72BD8BCF500337DA7 /* Views */,
 				39D94EDE2BD7AF21000D484E /* Assets.xcassets */,
+				39FB28E72BDDD5DE00DE1F03 /* ViewModels */,
 				39FB28E42BDDD41200DE1F03 /* DataServices */,
 				39D94EE02BD7AF21000D484E /* Preview Content */,
 			);
@@ -101,20 +101,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		39FB28DF2BDDD09B00DE1F03 /* TestView */ = {
-			isa = PBXGroup;
-			children = (
-				39FB28E02BDDD0AC00DE1F03 /* DataModelTest.swift */,
-			);
-			path = TestView;
-			sourceTree = "<group>";
-		};
 		39FB28E42BDDD41200DE1F03 /* DataServices */ = {
 			isa = PBXGroup;
 			children = (
 				39FB28E52BDDD45B00DE1F03 /* chatData.json */,
 			);
 			path = DataServices;
+			sourceTree = "<group>";
+		};
+		39FB28E72BDDD5DE00DE1F03 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				39FB28E82BDDD60A00DE1F03 /* ChatViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +192,8 @@
 				39B2C7092BD7B119008B1EAA /* ChatView.swift in Sources */,
 				39FB28E32BDDD35500DE1F03 /* Chat.swift in Sources */,
 				39FB28DA2BDC756500DE1F03 /* Message.swift in Sources */,
-				39FB28E12BDDD0AC00DE1F03 /* DataModelTest.swift in Sources */,
 				39D94EDB2BD7AF18000D484E /* ChatViewWithSwiftUIApp.swift in Sources */,
+				39FB28E92BDDD60A00DE1F03 /* ChatViewModel.swift in Sources */,
 				396D56E62BD8BCDA00337DA7 /* MessageRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

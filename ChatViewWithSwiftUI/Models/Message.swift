@@ -8,9 +8,9 @@
 import Foundation
 
 struct Message {
-    let id: String = UUID().uuidString
+    let id: String
     let text: String
-    let date: Date
+    let date: String
     let user: User
     var isRead: Bool
 }
