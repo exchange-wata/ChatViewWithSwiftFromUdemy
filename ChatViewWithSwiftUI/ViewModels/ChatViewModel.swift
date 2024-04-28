@@ -8,6 +8,16 @@
 import Foundation
 
 class ChatViewModel {
+    var chatData: [Chat] = []
+    var messages: [Message] = []
+    
+    init() {
+        chatData = fetchChatData()
+        messages = chatData[0].messages  // 暫定対応
+        
+        print(messages)
+    }
+    
     private func fetchChatData() -> [Chat] {
         let filename = "chatData.json"
         let data: Data

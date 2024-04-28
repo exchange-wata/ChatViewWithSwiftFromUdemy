@@ -34,7 +34,7 @@ extension MessageRow {
     }
 
     private var userIcon: some View {
-        Image("animal_penguin_couple")
+        Image("user01")
             .resizable()
             .frame(width: 48, height: 48)
             .cornerRadius(30)
