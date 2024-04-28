@@ -16,6 +16,7 @@
 		39FB28DA2BDC756500DE1F03 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FB28D92BDC756500DE1F03 /* Message.swift */; };
 		39FB28E12BDDD0AC00DE1F03 /* DataModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FB28E02BDDD0AC00DE1F03 /* DataModelTest.swift */; };
 		39FB28E32BDDD35500DE1F03 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FB28E22BDDD35500DE1F03 /* Chat.swift */; };
+		39FB28E62BDDD45B00DE1F03 /* chatData.json in Resources */ = {isa = PBXBuildFile; fileRef = 39FB28E52BDDD45B00DE1F03 /* chatData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		39FB28D92BDC756500DE1F03 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		39FB28E02BDDD0AC00DE1F03 /* DataModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelTest.swift; sourceTree = "<group>"; };
 		39FB28E22BDDD35500DE1F03 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		39FB28E52BDDD45B00DE1F03 /* chatData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chatData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				39B799FA2BDC719D008979FD /* Models */,
 				396D56E72BD8BCF500337DA7 /* Views */,
 				39D94EDE2BD7AF21000D484E /* Assets.xcassets */,
+				39FB28E42BDDD41200DE1F03 /* DataServices */,
 				39D94EE02BD7AF21000D484E /* Preview Content */,
 			);
 			path = ChatViewWithSwiftUI;
@@ -104,6 +107,14 @@
 				39FB28E02BDDD0AC00DE1F03 /* DataModelTest.swift */,
 			);
 			path = TestView;
+			sourceTree = "<group>";
+		};
+		39FB28E42BDDD41200DE1F03 /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				39FB28E52BDDD45B00DE1F03 /* chatData.json */,
+			);
+			path = DataServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39D94EE22BD7AF21000D484E /* Preview Assets.xcassets in Resources */,
+				39FB28E62BDDD45B00DE1F03 /* chatData.json in Resources */,
 				39D94EDF2BD7AF21000D484E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
