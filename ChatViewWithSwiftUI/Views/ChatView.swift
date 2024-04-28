@@ -38,8 +38,8 @@ extension ChatView {
     private var messageArea: some View {
         ScrollView {
             VStack(spacing: 0) {
-                ForEach(0..<15) {
-                    _ in MessageRow()
+                ForEach(vm.messages) { message in
+                    MessageRow(message: message)
                 }
             }
             .padding(.horizontal)

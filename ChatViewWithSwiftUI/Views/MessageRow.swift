@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MessageRow: View {
+    let message: Message
     var body: some View {
         HStack(alignment: .top) {
             userIcon
@@ -21,7 +22,8 @@ struct MessageRow: View {
 
 struct MessageRow_Previews: PreviewProvider {
     static var previews: some View {
-        MessageRow()
+        let exampleMessage = Message(id: "1", text: "テストメッセージ", date: "2023-01-30 12:03:00", user: User(id: "1", name: "ユーザー名", image: "user01"), isRead: false)
+        MessageRow(message: exampleMessage)
             .background(.teal)
     }
 }
@@ -34,14 +36,14 @@ extension MessageRow {
     }
 
     private var userIcon: some View {
-        Image("user01")
+        Image(message.user.image)
             .resizable()
             .frame(width: 48, height: 48)
             .cornerRadius(30)
     }
     
     private var messageText: some View {
-        Text("hellohellohellohellohellohellohellohellohellohellohellohellohellohello")
+        Text(message.text)
             .padding()
             .background(.white)
             .cornerRadius(30)
@@ -50,7 +52,7 @@ extension MessageRow {
     private var messageState: some View {
         VStack(alignment: .trailing) {
             Spacer()
-            Text("既読")
+            Text(message.isRead ? "既読" : "未読")
             Text(formattedDateString)
         }
         .foregroundColor(.secondary)
