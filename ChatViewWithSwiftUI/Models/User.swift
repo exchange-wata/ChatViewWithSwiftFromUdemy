@@ -11,4 +11,9 @@ struct User: Decodable {
     let id: String
     let name: String
     let image: String
+    
+    // ログインユーザーを固定して実装する
+    var isSpecificLoginUser: Bool {
+        self.id == "1"
+    }
 }
