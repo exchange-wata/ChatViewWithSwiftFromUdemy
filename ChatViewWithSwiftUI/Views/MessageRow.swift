@@ -56,7 +56,8 @@ extension MessageRow {
     private var messageText: some View {
         Text(message.text)
             .padding()
-            .background(.white)
+            .background(message.user.isSpecificLoginUser ? Color("Bubble") : Color(uiColor: .tertiarySystemBackground))
+            .foregroundColor(message.user.isSpecificLoginUser ? .black : .primary)
             .cornerRadius(30)
     }
     
