@@ -37,18 +37,23 @@ struct ChatView_Previews: PreviewProvider {
 
 extension ChatView {
     private var messageArea: some View {
-        ScrollView {
-            VStack(spacing: 0) {
-                ForEach(vm.messages) { message in
-                    MessageRow(message: message)
+        ScrollViewReader { proxy in
+            ScrollView {
+                VStack(spacing: 0) {
+                    ForEach(vm.messages) { message in
+                        MessageRow(message: message)
+                    }
                 }
+                .padding(.horizontal)
+                .padding(.top, 72)
             }
-            .padding(.horizontal)
-            .padding(.top, 72)
-        }
-        .background(Color("Background"))
-        .onTapGesture {
-            textFieldForcused = false
+            .background(Color("Background"))
+            .onTapGesture {
+                textFieldForcused = false
+            }
+            .onAppear {
+                scrolltoLast(proxy: proxy)
+            }
         }
     }
     
@@ -108,6 +113,12 @@ extension ChatView {
         if !textFieldText.isEmpty {
             vm.addMessage(text: textFieldText)
             textFieldText = ""
+        }
+    }
+    
+    private func scrolltoLast (proxy: ScrollViewProxy) {
+        if let lastMessage = vm.messages.last {
+            proxy.scrollTo(lastMessage.id, anchor: .bottom)
         }
     }
 }
