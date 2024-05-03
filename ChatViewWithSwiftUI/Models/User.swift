@@ -14,6 +14,11 @@ struct User: Decodable {
     
     // ログインユーザーを固定して実装する
     var isSpecificLoginUser: Bool {
-        self.id == "1"
+        self.id == User.loginUser.id
+    }
+    
+    // 本体はサーバーと通信をする
+    static var loginUser: User {
+        User(id: "1", name: "Mz", image: "user01")
     }
 }
