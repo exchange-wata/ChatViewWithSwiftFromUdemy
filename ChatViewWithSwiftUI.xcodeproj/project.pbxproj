@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		396D56E62BD8BCDA00337DA7 /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396D56E52BD8BCDA00337DA7 /* MessageRow.swift */; };
+		398045FD2BEC9B6B00D1D55E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398045FC2BEC9B6A00D1D55E /* ListView.swift */; };
 		39B2C7092BD7B119008B1EAA /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B2C7082BD7B119008B1EAA /* ChatView.swift */; };
 		39B799FC2BDC71E6008979FD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B799FB2BDC71E6008979FD /* User.swift */; };
 		39D94EDB2BD7AF18000D484E /* ChatViewWithSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D94EDA2BD7AF18000D484E /* ChatViewWithSwiftUIApp.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		396D56E52BD8BCDA00337DA7 /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
+		398045FC2BEC9B6A00D1D55E /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		39B2C7082BD7B119008B1EAA /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		39B799FB2BDC71E6008979FD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		39D94ED72BD7AF18000D484E /* ChatViewWithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatViewWithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +49,7 @@
 		396D56E72BD8BCF500337DA7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				398045FC2BEC9B6A00D1D55E /* ListView.swift */,
 				39B2C7082BD7B119008B1EAA /* ChatView.swift */,
 				396D56E52BD8BCDA00337DA7 /* MessageRow.swift */,
 			);
@@ -188,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				398045FD2BEC9B6B00D1D55E /* ListView.swift in Sources */,
 				39B799FC2BDC71E6008979FD /* User.swift in Sources */,
 				39B2C7092BD7B119008B1EAA /* ChatView.swift in Sources */,
 				39FB28E32BDDD35500DE1F03 /* Chat.swift in Sources */,
