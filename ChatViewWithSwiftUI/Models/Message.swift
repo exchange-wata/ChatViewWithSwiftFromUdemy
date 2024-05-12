@@ -13,4 +13,6 @@ struct Message: Decodable, Identifiable {
     let date: String
     let user: User
     var isRead: Bool
+    
+    
 }
