@@ -8,7 +8,7 @@
 import Foundation
 
 class ChatViewModel: ObservableObject {
-    var chatData: [Chat] = []
+    @Published var chatData: [Chat] = []
     @Published var messages: [Message] = []
     
     init() {
@@ -38,7 +38,10 @@ class ChatViewModel: ObservableObject {
         }
     }
     
-    func addMessage (text: String) {
+    func addMessage (chatId: String, text: String) {
+        
+        guard let index = chatData.firstIndex(where: { chat in chat.id == chatId }) else { return }
+        
         let newMessage = Message(
             id: UUID().uuidString,
             text: text,
@@ -47,6 +50,6 @@ class ChatViewModel: ObservableObject {
             isRead: false
         )
         
-        messages.append(newMessage)
+        chatData[index].messages.append(newMessage)
     }
 }
